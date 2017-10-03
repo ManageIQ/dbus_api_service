@@ -1,1 +1,7 @@
+.bundle
+.config
+.yardoc
 Gemfile.lock
+_yardoc
+coverage/
+doc/
