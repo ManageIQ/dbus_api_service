@@ -2,11 +2,11 @@ require "sinatra/base"
 require "dbus"
 require "json"
 
-class AuthApiService < Sinatra::Base
+class DBusApiService < Sinatra::Base
   DEFAULT_USER_ATTRIBUTES = %w(mail givenname sn displayname domainname).freeze
 
   set :bind, "0.0.0.0"
-  set :port, ENV["HTTPD_AUTH_API_SERVICE_PORT"]
+  set :port, ENV.fetch("HTTPD_AUTH_API_SERVICE_PORT", 8080)
 
   get "/api/user_attrs/:userid", :provides => 'json' do
     attrs_needed = params[:attributes].nil? ? DEFAULT_USER_ATTRIBUTES : params[:attributes].split(',')
@@ -52,4 +52,4 @@ class AuthApiService < Sinatra::Base
   end
 end
 
-AuthApiService.run!
+DBusApiService.run!
