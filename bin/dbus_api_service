@@ -3,3 +3,7 @@ root_dir = File.expand_path("..", __dir__)
 Dir.chdir(root_dir) { require 'bundler/setup' }
 $LOAD_PATH << File.join(root_dir, "lib")
 require "dbus_api_service"
+
+DBusApiService.set :bind, "0.0.0.0"
+DBusApiService.set :port, ENV.fetch("HTTPD_DBUS_API_SERVICE_PORT", 8080)
+DBusApiService.run!
