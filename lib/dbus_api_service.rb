@@ -5,9 +5,6 @@ require "json"
 class DBusApiService < Sinatra::Base
   DEFAULT_USER_ATTRIBUTES = %w(mail givenname sn displayname domainname).freeze
 
-  set :bind, "0.0.0.0"
-  set :port, ENV.fetch("HTTPD_DBUS_API_SERVICE_PORT", 8080)
-
   get "/api/user_attrs/:userid", :provides => 'json' do
     attrs_needed = params[:attributes].nil? ? DEFAULT_USER_ATTRIBUTES : params[:attributes].split(',')
 
@@ -51,5 +48,3 @@ class DBusApiService < Sinatra::Base
     { "result" => data }.to_json
   end
 end
-
-DBusApiService.run!
