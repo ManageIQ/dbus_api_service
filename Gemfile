@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "ruby-dbus"
-gem "sinatra", "~>2.0.0"
+gem "sinatra", "~>2.0.1"
 
 group :test do
   gem "rack-test"
