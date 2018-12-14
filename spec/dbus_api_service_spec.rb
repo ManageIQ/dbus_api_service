@@ -31,9 +31,9 @@ describe DBusApiService do
     expect(JSON.parse(last_response.body)).to eq expected
   end
 
-  def assert_error_response(expected)
+  def assert_error_matches(error_pattern)
     expect(last_response).to_not be_ok
-    expect(JSON.parse(last_response.body)).to eq expected
+    expect(JSON.parse(last_response.body)["error"]).to match(error_pattern)
   end
 
   describe "/" do
@@ -51,7 +51,7 @@ describe DBusApiService do
 
     it "when DBus is not running" do
       get "/api/user_attrs/#{user}"
-      assert_error_response("error" => "Unable to get attributes for user #{user} - No such file or directory - connect(2) for /var/run/dbus/system_bus_socket")
+      assert_error_matches(/Unable to get attributes for user #{user} - .*/)
     end
 
     it "with a user" do
@@ -113,7 +113,7 @@ describe DBusApiService do
 
     it "when DBus is not running" do
       get "/api/user_groups/#{user}"
-      assert_error_response("error" => "Unable to get groups for user #{user} - No such file or directory - connect(2) for /var/run/dbus/system_bus_socket")
+      assert_error_matches(/Unable to get groups for user #{user} - .*/)
     end
 
     it "with a user with groups" do
