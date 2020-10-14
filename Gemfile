@@ -4,6 +4,7 @@ gem "ruby-dbus"
 gem "sinatra", "~>2.0.2"
 
 group :test do
+  gem "manageiq-style"
   gem "rack-test"
   gem "rake"
   gem "rspec", "~>3.6"
