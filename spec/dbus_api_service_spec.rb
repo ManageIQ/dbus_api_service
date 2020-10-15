@@ -23,7 +23,7 @@ describe DBusApiService do
 
   def assert_not_found
     expect(last_response).to_not be_ok
-    expect(last_response.body).to include "Not Found"
+    expect(last_response.status).to eql 404
   end
 
   def assert_response(expected)
