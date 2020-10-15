@@ -2,7 +2,7 @@
 
 An application to get user attributes and groups via the DBus API
 
-[![Build Status](https://travis-ci.org/ManageIQ/dbus_api_service.svg?branch=master)](https://travis-ci.org/ManageIQ/dbus_api_service)
+[![Build Status](https://travis-ci.com/ManageIQ/dbus_api_service.svg?branch=master)](https://travis-ci.com/ManageIQ/dbus_api_service)
 [![Code Climate](https://codeclimate.com/github/ManageIQ/dbus_api_service.svg)](https://codeclimate.com/github/ManageIQ/dbus_api_service)
 [![Test Coverage](https://codeclimate.com/github/ManageIQ/dbus_api_service/badges/coverage.svg)](https://codeclimate.com/github/ManageIQ/dbus_api_service/coverage)
 [![Dependency Status](https://gemnasium.com/ManageIQ/dbus_api_service.svg)](https://gemnasium.com/ManageIQ/dbus_api_service)
