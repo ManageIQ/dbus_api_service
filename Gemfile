@@ -10,7 +10,6 @@ group :test do
   gem "rspec", "~>3.6"
 
   # Coverage
-  gem "codeclimate-test-reporter"
   gem "simplecov"
 end
 
