@@ -5,7 +5,6 @@ An application to get user attributes and groups via the DBus API
 [![Build Status](https://travis-ci.com/ManageIQ/dbus_api_service.svg?branch=master)](https://travis-ci.com/github/ManageIQ/dbus_api_service)
 [![Code Climate](https://codeclimate.com/github/ManageIQ/dbus_api_service.svg)](https://codeclimate.com/github/ManageIQ/dbus_api_service)
 [![Test Coverage](https://codeclimate.com/github/ManageIQ/dbus_api_service/badges/coverage.svg)](https://codeclimate.com/github/ManageIQ/dbus_api_service/coverage)
-[![Security](https://hakiri.io/github/ManageIQ/dbus_api_service/master.svg)](https://hakiri.io/github/ManageIQ/dbus_api_service/master)
 
 [![Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ManageIQ/authentication?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
