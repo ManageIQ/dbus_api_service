@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "ruby-dbus"
-gem "sinatra", "~>2.2.3"
+gem "sinatra", "~>4.0.0"
 
 group :test do
   gem "manageiq-style"
