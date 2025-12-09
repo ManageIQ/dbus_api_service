@@ -3,8 +3,6 @@
 An application to get user attributes and groups via the DBus API
 
 [![CI](https://github.com/ManageIQ/dbus_api_service/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/ManageIQ/dbus_api_service/actions/workflows/ci.yaml)
-[![Code Climate](https://codeclimate.com/github/ManageIQ/dbus_api_service.svg)](https://codeclimate.com/github/ManageIQ/dbus_api_service)
-[![Test Coverage](https://codeclimate.com/github/ManageIQ/dbus_api_service/badges/coverage.svg)](https://codeclimate.com/github/ManageIQ/dbus_api_service/coverage)
 
 [![Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ManageIQ/authentication?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
